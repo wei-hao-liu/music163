@@ -20,22 +20,22 @@ export default {
     return {
       swiperList: [
         {
-          src: "/img/s1.jpg"
+          src: "img/s1.jpg"
         },
         {
-          src: "/img/s2.jpg"
+          src: "img/s2.jpg"
         },
         {
-          src: "/img/s3.jpg"
+          src: "img/s3.jpg"
         },
         {
-          src: "/img/s4.jpg"
+          src: "img/s4.jpg"
         },
         {
-          src: "/img/s5.jpg"
+          src: "img/s5.jpg"
         },
         {
-          src: "/img/s6.jpg"
+          src: "img/s6.jpg"
         }
       ]
     };
