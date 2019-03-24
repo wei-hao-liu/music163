@@ -4,11 +4,14 @@
     <transition :name="transitionName">
       <router-view class="box-content"/>
     </transition>
+
+    <box-foot></box-foot>
   </div>
 </template>
 
 <script>
 import BoxNav from "@/components/basic/BoxNav.vue";
+import BoxFoot from "@/components/basic/BoxFoot"
 export default {
   data() {
     return {
@@ -17,7 +20,8 @@ export default {
   },
   components: {
     //es6
-    BoxNav
+    BoxNav,
+    BoxFoot,
     //es5
     //BoxNav:BoxNav || box-nav:BoxNav
   },

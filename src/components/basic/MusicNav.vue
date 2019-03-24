@@ -32,9 +32,9 @@ export default {
         }
     },
     mounted(){
-        setTimeout(()=>{
+         setTimeout(()=>{
             this.tabLeft = this.$refs.tab[this.tabIndex].getBoundingClientRect().left;
-        },300)
+         },210)
     },
     methods:{
         changeNav(index){
@@ -52,7 +52,8 @@ export default {
 <style lang="less" scoped>
     .music-nav{
         position: relative;
-        .h(110);
+        top:-1px;
+        .h(111);
         background: linear-gradient(to bottom,#e2453a,#e8493d);
         display: flex;
         &>div{

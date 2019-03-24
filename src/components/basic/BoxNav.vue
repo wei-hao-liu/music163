@@ -54,22 +54,22 @@ export default {
   align-items: center;
   .p-all(0, 20);
   span {
-    .fs(70);
+    .fs(80);
     color: #ffffff;
     position: relative;
     z-index: 10;
   }
   .caidan {
-    .w(100);
-    .h(100);
+    .w(120);
+    .h(120);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
   }
   .sousuo{
-    .w(100);
-    .h(100);
+    .w(120);
+    .h(120);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,16 +80,16 @@ export default {
     display: flex;
     justify-content: space-between;
     & > div {
-      .m(10);
-      .w(100);
-      .h(100);
+      .m(20);
+      .w(130);
+      .h(130);
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
       span {
         color: rgba(255, 255, 255, 0.3);
-        .fs(65);
+        .fs(75);
         transition: color ease-out 0.2s;
 
       }

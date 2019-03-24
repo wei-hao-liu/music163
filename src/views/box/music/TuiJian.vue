@@ -1,20 +1,25 @@
 <template>
   <div class="tuijian">
     <div class="bg"></div>
+    <!-- 在页面显示swiper-->
     <mt-swipe class="tuijian-swiper" :auto="5000">
       <mt-swipe-item v-for="(v,i) in swiperList" :key="i" class="tuijian-swiper-item">
         <img :src="v.src">
       </mt-swipe-item>
     </mt-swipe>
+    <!-- 在页面显示musictab-->
+    <MusicTab v-for="(v,i) in 20" :key="i"/>
+
   </div>
 </template>
 
 <script>
-import { Swipe, SwipeItem } from "mint-ui";
+import MusicTab from "@/components/basic/MusicTab.vue"
+
+
 export default {
   components: {
-    "mt-swipe": Swipe,
-    "mt-swipe-item": SwipeItem
+    MusicTab,
   },
   data() {
     return {
@@ -54,7 +59,7 @@ export default {
     width: 100%;
   }
   .tuijian-swiper {
-    .h(440);
+    .h(470);
     .tuijian-swiper-item {
       .p(20);
       box-sizing: border-box;
